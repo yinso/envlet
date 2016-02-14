@@ -24,9 +24,7 @@
     "mocha": "^2.3.4"
   },
   "keywords": [
-    "type system",
-    "type",
-    "contract",
-    "extensible"
+    "environment variables",
+    "environment"
   ]
 }
