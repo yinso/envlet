@@ -1,5 +1,23 @@
 # Envlet - Environment variable parsing
 
+Envlet handles and parses environment variables, similar to `optimist` for command line arguments. It has the following features:
+
+* Handle application prefixes seamlessly.
+
+  I.e. if you have a `FOO` environment variable, you can either call it `MYAPP_FOO`, or just `FOO`.
+  
+* Manages JavaScript primitive types as well as array types.
+
+  This is done via [`typelet`](https://www.npmjs.com/package/typelet)'s parsing, so you can specify types like:
+
+    * `int`
+    * `float`
+    * `bool`
+    * `string`
+    * `date`
+    * `[ int ]` (array of integer)
+
+* Prints usages on error. Like `optimist`, you can build up the parsing spec, and on error, the spec will be printed and program halted.
 
 ## Install
 
